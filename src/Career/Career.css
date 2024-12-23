@@ -1,0 +1,102 @@
+.Career{
+    width: 100%;
+    color: white;
+    background-color: black;
+}
+.career-left{
+    width: 24rem;
+}
+.career{
+    background-image: url('../Imgs/img3.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.career-left-top h2 , .career-left-center h2{
+    text-transform: uppercase;
+    font-size: 40px;
+}
+.career-left-top h2 span , .career-left-center h2 span{
+    font-family: "Edu AU VIC WA NT Arrows", cursive;
+}
+
+.discover {
+    font-size: 17px;
+    background: transparent;
+    border: none;
+    padding: .6em 1.2em;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    transition: 0.5s ease;
+    cursor: pointer;
+    border: 1px solid #fff;
+  }
+  .career-left-center{
+    padding: 50px 0;
+  }
+  .career-left-bottom h3{
+    padding: 15px 0;
+  }
+  .discover::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: #fff;
+    transition: 0.5s ease;
+  }
+  
+  .discover:hover {
+    color: black;
+    transition-delay: 0.5s;
+    background-color: #fff;
+    border-radius: 7px;
+  }
+  
+  .discover:hover::before {
+    width: 100%;
+  }
+  
+  .discover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 100%;
+    background-color: #fff;
+    transition: 0.4s ease;
+    z-index: -1;
+  }
+  
+  .discover:hover::after {
+    height: 100%;
+    transition-delay: 0.4s;
+    color: aliceblue;
+  }
+.card-title{
+    text-transform: uppercase;
+  }
+.Card{
+    width: 24rem;
+}
+@media (max-width: 990px) {
+    .career{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .career-left{
+        width: 100%;
+        margin: 4% auto;
+    }
+    .career-right .Card{
+        width: 100%;
+    }
+}
